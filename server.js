@@ -1,9 +1,9 @@
 const express = require('express')
 const app = express();
-const port = process.env.PORT || 8086
+const port = 8086
 
 app.get('/', (req, res) => {
-    res.status(200).send("Hello world")
+    res.status(200).send("Hello world\n")
 })
 
 app.listen(port, () => {
